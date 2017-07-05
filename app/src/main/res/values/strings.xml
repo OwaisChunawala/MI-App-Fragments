@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MoodIndigoFragmentTab</string>
+    <string name="hello_blank_compi_fragment">Hello Blank Compi Fragment</string>
+    <string name="hello_blank_news_fragment">Hello Blank News Fragment</string>
+    <string name="hello_main_fragment">Hello Main Fragment</string>
+</resources>
