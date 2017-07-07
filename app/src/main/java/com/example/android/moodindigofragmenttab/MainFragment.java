@@ -44,8 +44,13 @@ public class MainFragment extends Fragment {
         container.removeAllViews();
         View view = inflater.inflate(R.layout.fragment_main, container,false);
 
+
         //Mrunmayi
         view=inflater.inflate(R.layout.fragment_main, container, false);
+
+        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        toolbar.setTitle("MoodIndigo");
+
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setText("News"));
         tabLayout.addTab(tabLayout.newTab().setText("Competitions"));
@@ -71,83 +76,5 @@ public class MainFragment extends Fragment {
         });
         return view;
     }
-
-//    public class ViewPagerAdapter extends FragmentStatePagerAdapter {
-//        int mNumOfTabs;
-//
-//        public ViewPagerAdapter(FragmentManager fm, int NumOfTabs) {
-//            super(fm);
-//            this.mNumOfTabs = NumOfTabs;
-//        }
-//
-//        @Override
-//        public Fragment getItem(int position) {
-//
-//            switch (position) {
-//                case 0:
-//                    NewsFragment tab1 = new NewsFragment();
-//                    return tab1;
-//                case 1:
-//                    CompiFragment tab2 = new CompiFragment();
-//                    return tab2;
-//                default:
-//                    return null;
-//            }
-//        }
-//
-//        @Override
-//        public int getCount() {
-//            return mNumOfTabs;
-//        }
-//    }
-
-    //Mrunmayi
-//    @Override
-//    public void onCreate(Bundle savedInstanceState){
-//        super.onCreate(savedInstanceState);
-//        setRetainInstance(true);
-//    }
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        // Inflate the layout for this fragment
-//        container.removeAllViews();
-//        View view = inflater.inflate(R.layout.fragment_main, container, false);
-//
-//        Toolbar toolbar = (Toolbar) getView().findViewById(R.id.toolbar);
-//        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
-//        setHasOptionsMenu(true);
-//
-//        TabLayout tabLayout =(TabLayout) getView().findViewById(R.id.tab_layout);
-//        tabLayout.addTab(tabLayout.newTab().setText("Compi"));
-//        tabLayout.addTab(tabLayout.newTab().setText("News"));
-//        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-//
-//        final ViewPager viewPager = (ViewPager) getView().findViewById(R.id.pager);
-//        final PagerAdapter adapter = new PagerAdapter
-//                (getActivity().getSupportFragmentManager(), tabLayout.getTabCount());
-//        viewPager.setAdapter(adapter);
-//        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-//        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-//            @Override
-//            public void onTabSelected(TabLayout.Tab tab) {
-//                viewPager.setCurrentItem(tab.getPosition());
-//            }
-//
-//            @Override
-//            public void onTabUnselected(TabLayout.Tab tab) {
-//
-//            }
-//
-//            @Override
-//            public void onTabReselected(TabLayout.Tab tab) {
-//
-//            }
-//        });
-//
-//        return view;
-//    }
-
 
 }
