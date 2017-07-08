@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.moodindigofragmenttab.MainActivity"
-    android:id="@+id/relative_layout_for_main_fragment">
+    android:orientation="vertical">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:name="Mood Indigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <RelativeLayout
 
-
-</RelativeLayout>
+        android:id="@+id/relative_layout_for_main_fragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context="com.example.android.moodindigofragmenttab.MainActivity">
+    </RelativeLayout>
+</FrameLayout>

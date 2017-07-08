@@ -19,10 +19,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout mDrawer;
+    private DrawerLayout drawerLayout;
     private Toolbar toolbar;
-    private NavigationView nvDrawer;
-    private ActionBarDrawerToggle mDrawerToggle;
+    private NavigationView navigationView;
+    private ActionBarDrawerToggle actionBarDrawerToggle;
     private CharSequence mTitle;
     private CharSequence mDrawerTitle;
 
@@ -34,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+//        // Set a Toolbar to replace the ActionBar.
+//        toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//
+//        // Find our drawer view
+//        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//
+//
 
 
 
@@ -48,21 +58,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // The action bar home/up action should open or close the drawer.
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                mDrawer.openDrawer(GravityCompat.START);
-                return true;
-        }
 
-        return super.onOptionsItemSelected(item);
-    }
+
 
 
 }
